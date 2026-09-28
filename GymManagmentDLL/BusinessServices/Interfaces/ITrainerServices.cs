@@ -1,0 +1,17 @@
+﻿namespace GymManagmentBLL.BusinessServices.Interfaces
+{
+    public interface ITrainerServices
+    {
+        IEnumerable<TrainerViewModel> GetAllTrainers();
+        bool CreateTrainer(CreateTrainerViewModel createTrainer);
+
+        TrainerViewModel? GetTrainerDetails(int trainerId);
+
+        TrainerToUpdateViewModel? GetTrainerToUpdate(int trainerId);
+        bool UpdateTrainer(int id, TrainerToUpdateViewModel trainerToUpdate);
+        bool DeleteTrainer(int trainerId);
+
+
+
+    }
+}
